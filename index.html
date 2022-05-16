@@ -13,11 +13,28 @@
       }
       h1 {color:red;}
     </style>
+    <script type="text/javascript">
+      function Meow() {
+        alert("Meow");
+      }
+      function catMeow() {
+        var element1 = document.getElementById('Meow1')
+        var element2 = document.getElementById('Meow2')
+        var result = parseInt(element1.value) + parseInt(element2.value)
+        alert("結果" + result);
+      }
+    </script>
   </head>
   <body>
     <h1>猫</h1>
     <h2>hello</h2>
     <h3>world</h3>
+
+    <p onclick="Meow();">cat</p>
+    <input id="Meow1" type="text" name="" value="">
+    <input id="Meow2" type="text" name="" value="">
+    <button onclick="catMeow()" type="button" name="button">計算</button>
+
     <ul>
     <li>ニャー</li>
     <li>ニャーニャー</li>
